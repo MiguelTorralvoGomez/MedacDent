@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir o Modificar Citas</title>
+    <link rel="stylesheet" href="CssPrincipal.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="Logo MedacDent" id="logo">
+        <h1>Añadir o Modificar Citas</h1>
+    </header>
+
+    <div id="modificarCitas">
+        <form id="formCita">
+            <label for="fecha">Fecha y Hora:</label>
+            <input type="datetime-local" id="fecha" required><br>
+            <label for="cliente">Cliente:</label>
+            <input id="clienteCita"></input><br>
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones"></textarea><br>
+            <button type="submit">Guardar Cita</button>
+        </form>
+        <br>
+        <br>
+        <button onclick="window.location.href='index.html'">Volver</button>
+    </div>
+    <script src="ScriptPrincipal.js"></script>
+</body>
+</html>
